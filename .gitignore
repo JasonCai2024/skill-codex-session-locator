@@ -1,0 +1,36 @@
+# 敏感信息
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+credentials.json
+secrets.json
+
+# 本地凭据回退层
+data/credentials.json
+data/*.sqlite
+data/*.jsonl
+
+# 测试产物
+*.bak
+*.tmp
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Codex 主页目录下的所有内容(可能含敏感元数据)
+.codex/
+test_codex_home/
+
+# 本地日志
+*.log
+logs/
