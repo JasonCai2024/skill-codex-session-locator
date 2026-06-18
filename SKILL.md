@@ -1,9 +1,9 @@
 ---
 name: skill-codex-session-locator
-description: Locates Codex CLI sessions by cwd + update time, reads rollout JSONL. Use when user mentions a Codex session by project path and timestamp (e.g., 'yesterday's Codex in E:\vnpy-master') and wants to find, summarize, or resume it. Triggers on: 找Codex会话, 定位Codex历史, resume Codex by cwd.
+description: Locates Codex CLI sessions by matching working directory and update time against the local state index, then extracts transcripts from rollout JSONL. Use when the user mentions a Codex session by project path and timestamp and wants to find, summarize, or resume it. Trigger phrases include 找Codex会话, 定位Codex历史, resume Codex by cwd.
 disable-model-invocation: true
 user-invocable: true
-argument-hint: [cwd-path] [time-hint]
+argument-hint: [cwd-path, time-hint]
 ---
 
 # Skill Codex Session Locator
